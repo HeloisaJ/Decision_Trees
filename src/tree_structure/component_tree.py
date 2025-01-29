@@ -6,10 +6,10 @@ class Component_tree(ABC):
     def predict(self) -> None: pass
 
     @abstractmethod
-    def add_feature_branch(self, c_tree: Component_tree) -> None: pass
+    def add_feature_branch(self) -> None: pass
 
     @abstractmethod
-    def remove_feature_branch(self, c_tree: Component_tree) -> None: pass
+    def remove_feature_branch(self) -> None: pass
 
     @abstractmethod
     def get_feature_branches(self) -> None: pass
