@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 class Component_tree(ABC):
 
     @abstractmethod
-    def calculate_result(self) -> None: pass
+    def predict(self) -> None: pass
 
     @abstractmethod
     def add_feature_branch(self, c_tree: Component_tree) -> None: pass
